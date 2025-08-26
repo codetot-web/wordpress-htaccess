@@ -107,6 +107,11 @@ deny from all
 Order allow,deny
 Deny from all
 </Files>
+
+<FilesMatch "^(README\.md|license\.txt)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
 ```
 
 ## Block author user pages
