@@ -206,14 +206,6 @@ Header set X-XSS-Protection "1; mode=block"
 Header set Content-Security-Policy "default-src 'self'; script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com; object-src 'none';"
 ```
 
-## Advanced - Deny access php file directly
-
-```
-<Files *.php>
-deny from all
-</Files>
-```
-
 ## Advanced - Limit IP access to login
 
 ```
